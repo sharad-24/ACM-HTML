@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<style>
+  body {
+    background-color: #221F1F;
+    color: white;
+  }
+
+
+/* NAVBAR CSS */
+.container-fluid{
+    background-color: #221F1F;
+}
+.offcanvas-body{
+    text-align: right;
+    background-color: #0087BE;
+}
+
+a {
+    color: #f2f2f2!important;
+    text-decoration: none;
+   
+  }
+.offcanvas-header{
+    background-color: #0087BE;
+}
+.navbar navbar-light bg-light fixed-top{
+    color: #221F1F;
+}
+.navbar-nav justify-content-end flex-grow-1 pe-3{
+    padding-top: 80px!important;
+}
+.nav-link{
+    
+    font-family:Olivetta,sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 25px;
+    padding: 0.7em 0.5em 0.7em 1.4em;
+    text-transform: uppercase;
+}
+.hori222019 a{
+    font-family:Olivetta,sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 25px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+.offcanvas-body{
+    padding-top: 80px;
+}
+.cross{
+    margin-right: 20px!important;
+    padding-bottom: 35px!important;
+}
+
+
+
+
+/* main */
+
+
+.sponsors_static_section{
+  margin-top: 25%;
+}
+
+
+
+  .sponsor_static_BringingTheChanges {
+    margin: 5.3vw;
+    font-size: 1.8em;
+    background: linear-gradient(to bottom, #221F1F 60%, #0087BE 40%);
+    width: 330px;
+  }
+
+  .col {
+    margin-bottom: 1.5em;
+  }
+
+  .card {
+    width: 200px;
+    height: 191px;
+    background: url("assets/Component\ 2340.png") no-repeat;
+    border: none;
+    background-position: center;
+
+  }
+
+  .card:hover {
+    background: url("assets/Component\ 2341.png") no-repeat;
+    background-position: center;
+  }
+
+
+  .SponsorshipBrochure {
+    margin: 5.3vw;
+    font-size: 1.8em;
+    background: linear-gradient(to bottom, #221F1F 60%, #0087BE 40%);
+    width: 370px;
+  }
+
+  .international{
+    width: 60vw;
+    height: 3vh;
+    font-size: 1.2em;
+  }
+
+  .iframe{
+    height: 50vh;
+    width: 50vw;
+    border: 1px solid white;
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .international{
+    width: auto;
+    height: auto;
+    font-size: 1.2em;
+  }
+  .iframe{
+    height: auto;
+    width: auto;
+    border: 1px solid white;
+    
+  }
+  .sponsors_static_section{
+  margin-top: 65%;
+  }
+
+}
+
+/* Footer CSS */
+
+
+.footer{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color: white;
+    background-color:rgb(50, 55, 58) ;
+}
+/* .container{
+    max-width: 1170px;
+    background-color:rgb(50, 55, 58) ;
+    margin:auto;
+   
+} */
+/* .row{
+    display: flex;
+    justify-content: space-evenly;
+} */
+ul{
+    list-style: none;
+    color: white;
+}
+/* .footer{
+    background-color: rgb(50, 55, 58);
+} */
+/* .col{
+    width:25%;
+    padding: 0 15px;
+} */
+.xyz{
+    font-size:24px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 20px;
+    text-decoration: none;
+}
+/* .col h4::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom: -10px;
+    height:2px;
+    box-sizing: border-box;
+    width:50px;
+} */
+/* .address{
+    font-size: 30px;
+    text-transform: capitalize;
+    color:white;
+    text-align: left;
+    display: block;
+    transition: all 0.3s ease;
+} */
+.xyz :hover{
+    color:white;
+    padding-left: 8px;
+    text-decoration: none;
+}
+.address :hover{
+    /* color:brown; */
+    padding-left: 8px;
+
+}
+
+.handw{
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.linefooter{
+    padding-left:5px;
+}
+.copyr{
+    padding-bottom: 10px;
+}
+.line{
+    width: 10px;
+    height: 10px;
+    color: white;
+}
+
+.maps{
+    width: 100%;
+    height: 204px;
+}
+
+
+
+
+
+
+</style>
+
+<body>
+
+  <!-- NAVBAR CODE -->
+
+  <navbar>
+    <nav class="navbar navbar-light fixed-top">
+      <div class="container-fluid">
+          <img src="assets/logo (1).png" href="#" width="188px" height="187px">
+          <img src="assets/trigger.png" width="55.82px" height="31.52px" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <!-- <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button> -->
+              <!-- </div> --> 
+              <div class="offcanvas-body">
+                  <div class="cross">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+                  </div>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">EVENTS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">BLOG</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">PRODIGY</a>
+                      </li>
+                      <ul class="hori222019">
+                          <a href="#"> 21</a>
+                          <a  href="#"> 20</a>
+                          <a  href="#"> 19</a>
+                      </ul>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">CSR</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">TEAM</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">PROJECTS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">SPONSORS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">CONTACT</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">REGISTER NOW</a>
+                      </li>
+
+              </div>
+          </div>
+      </div>
+    </nav>
+  </navbar>
+
+
+
+
+
+
+  <div class="sponsors_static_section">
+
+    <div class="container">
+      <div class="sponsor_static_BringingTheChanges">
+        <p>BRINGING THE CHANGE</p>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <center>
+        <div class="row">
+          <div class="col">
+            <center>
+              <div class="card">
+            </center>
+          </div>
+          <div class="col">
+            <center>
+              <div class="card">
+            </center>
+          </div>
+          <div class="col">
+            <center>
+              <div class="card">
+            </center>
+          </div>
+          <div class="col">
+            <center>
+              <div class="card"></div>
+            </center>
+          </div>
+        </div>
+      </center>
+    </div>
+
+
+    
+      <div class="container">
+        <div class="sponsor_static_BringingTheChanges">
+          <p>BRINGING THE CHANGE</p>
+        </div>
+      </div>
+
+
+
+      <div class="container">
+        <center>
+          <div class="row">
+            <div class="col">
+              <center>
+                <div class="card">
+              </center>
+            </div>
+            <div class="col">
+              <center>
+                <div class="card">
+              </center>
+            </div>
+            <div class="col">
+              <center>
+                <div class="card">
+              </center>
+            </div>
+            <div class="col">
+              <center>
+                <div class="card"></div>
+              </center>
+            </div>
+          </div>
+        </center>
+      </div>
+
+
+      
+        <div class="container">
+          <div class="sponsor_static_BringingTheChanges">
+            <p>BRINGING THE CHANGE</p>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <center>
+            <div class="row">
+              <div class="col">
+                <center>
+                  <div class="card">
+                </center>
+              </div>
+              <div class="col">
+                <center>
+                  <div class="card">
+                </center>
+              </div>
+              <div class="col">
+                <center>
+                  <div class="card">
+                </center>
+              </div>
+              <div class="col">
+                <center>
+                  <div class="card"></div>
+                </center>
+              </div>
+            </div>
+          </center>
+        </div>
+
+        <body>
+          <div class="container">
+            <div class="sponsor_static_BringingTheChanges">
+              <p>BRINGING THE CHANGE</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <center>
+              <div class="row">
+                <div class="col">
+                  <center>
+                    <div class="card">
+                  </center>
+                </div>
+                <div class="col">
+                  <center>
+                    <div class="card">
+                  </center>
+                </div>
+                <div class="col">
+                  <center>
+                    <div class="card">
+                  </center>
+                </div>
+                <div class="col">
+                  <center>
+                    <div class="card"></div>
+                  </center>
+                </div>
+              </div>
+            </center>
+          </div>
+
+          <br>
+          <body>
+            <center>
+            <div class="container">
+              <div class="SponsorshipBrochure">
+              <p>SPONSORSHIP BROCHURE</p> 
+              </div>
+            </div>
+            </center>
+            
+            <center>
+            <div class="container">
+            <div class="international">
+            <p>international international international international international international international international international international international international international international</p>
+            </div>
+            </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+          <center>
+          <div class="container">
+          <iframe class="iframe" src="https://youtu.be/QjnmPazw9EI">
+          </iframe>
+          </div>
+          </center>
+  </div>
+
+          <!-- FOOTER CODE -->
+
+
+          <footer class="footer">
+            <div class="container">
+                <hr>
+                <div class="row d flex justify-content-evenly">
+                    <div class="col-md-2">
+                        <img src="assets/logo.png">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="xyz">
+                            <u>Visit Us</u>
+                            <div class="address">
+                                <div>UPES Energy Acers</div>
+                                <div>Bidholi,</div>
+                                <div>Dehradun-248007,Uttrakhand,India</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="xyz">
+                            <u>Links to Visit</u>
+                                <div><a style="color: white" href="https://www.acm.org/">>ACM International</a></div>
+                                <div><a style="color: white" href="#">>ACM India</a></div>
+                                <div><a style="color: white" href="#">>UPES ACM-W</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <br>
+                        <div class="address">
+                            <ul type="none">
+                                <li><a href="https://www.instagram.com/upesacm/?hl=en">
+                                        <img src="assets/ig.png"></a></li>
+                                <br>
+                                <li><a href="https://www.facebook.com/upesacm/">
+                                        <img src="assets/fb.png"></a></li>
+                                <br>
+                                <li><a href="https://www.linkedin.com/company/upesacm/mycompany/?viewAsMember=true">
+                                        <img src="assets/linkedin.png"></a></li>
+    
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.710862751278!2d77.96464421507844!3d30.415944281748644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES%20-%20University%20of%20Petroleum%20and%20Energy%20Studies!5e0!3m2!1sen!2sin!4v1629495834754!5m2!1sen!2sin"
+                            style="border:0; width: 100%; height: 204px ;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <hr>
+                </div>
+            </div>
+            <center class="handw">
+                Copyright &copy 2021 All rights reserved | Designed and Developed by UPES ACM Web Development Team</center>
+        </footer>
+
+
+
+
+
+
+
+
+
+          <!-- Optional JavaScript; choose one of the two! -->
+
+          <!-- Option 1: Bootstrap Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+
+          <!-- Option 2: Separate Popper and Bootstrap JS -->
+          <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+        </body>
+
+</html>
